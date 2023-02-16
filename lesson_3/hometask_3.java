@@ -1,4 +1,4 @@
-package java_for_begginers.lesson_1;
+package java_for_begginers.lesson_3;
 import java.util.Scanner;
 
 public class hometask_3 {
