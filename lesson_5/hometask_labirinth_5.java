@@ -125,9 +125,6 @@ public class hometask_labirinth_5 {
                     else if (field[i][j] == 2){
                         tmp.append(purple + "EX" + white);
                     }
-                    else if (field[i][j] == 88){
-                        tmp.append(red + " *" + white);
-                    }
                     else if (field[i][j] == 99){
                         tmp.append(red + " *" + white );
                     }
@@ -185,7 +182,7 @@ public class hometask_labirinth_5 {
                 Points curr_p = way_queue.remove();
                 if (field[curr_p.y][curr_p.x + 1] == field[curr_p.y][curr_p.x] - 1) {
                     way_queue.add(new Points(curr_p.x + 1, curr_p.y));
-                    field[curr_p.y][curr_p.x] = 88;
+                    field[curr_p.y][curr_p.x] = 99;
                 }
                 else if (field[curr_p.y + 1][curr_p.x] ==  field[curr_p.y][curr_p.x] - 1) {
                     way_queue.add(new Points(curr_p.x, curr_p.y + 1));
@@ -193,7 +190,7 @@ public class hometask_labirinth_5 {
                 }
                 else if (field[curr_p.y][curr_p.x - 1] == field[curr_p.y][curr_p.x] - 1) {
                     way_queue.add(new Points(curr_p.x - 1, curr_p.y));
-                    field[curr_p.y][curr_p.x] = 88;
+                    field[curr_p.y][curr_p.x] = 99;
                 }
                 else if (field[curr_p.y - 1][curr_p.x] == field[curr_p.y][curr_p.x] - 1){
                     way_queue.add(new Points(curr_p.x, curr_p.y - 1));
